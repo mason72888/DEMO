@@ -1,0 +1,109 @@
+<!doctype html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>球員介紹</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link active" href="index.html"> 首頁 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="intro.html">球員介紹</a>
+						<a class="nav-item nav-link" href="QA.html">球員小知識</a>
+						<a class="nav-item nav-link" href="我的位置.html">史坦波中心</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+
+<!--給圖文內容區一個名稱，叫做"introfirst"-->
+<section id="introfirst">
+	<!--因為要劃分版面(畫表格的概念)，所以要把區域指定為容器"container"-->
+	<div class="container">
+	  <!--畫表格的時候，我們會先劃一個方格: 就是"row"-->
+	   <div class="row">
+		<!--畫完表格後，再決定每一欄(col)的大小，系統內建會自動分成12格，用col-X 來決定欄寬-->
+			<div class="col-6"> </div>
+				<!--col-4 表示拿12格中中間的4格-->
+			<div class="col-6">
+			      				  
+			
+			</div>
+	  </div>
+	</div>	
+</section>
+	
+	
+<section id="introsecond">
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<a href="https://zh.wikipedia.org/wiki/%E6%B3%95%E5%9C%8B%E9%AC%A5%E7%89%9B%E7%8A%AC">
+				<div class="card" style="width: 18rem;">
+				  <img src="lebron james.jfif" class="card-img-top">
+				  <div class="card-body">
+    			  <p class="card-text">lebron james</p>
+				  </div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+					<a href="https://www.storm.mg/article/147950">
+					<img src="lebron james.jpg" class="card-img-top">
+					</a>
+					<div class="card-body">
+					<p class="card-text">kobe bryant</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-4">
+			  <div class="card" style="width: 18rem;">
+					<img src="Stephen Curry.jpg" class="card-img-top" >
+					<div class="card-body">
+						<a href="https://pets.ettoday.net/news/808155">
+					<p class="card-text">Stephen Curry</p>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+</body>
+</html>
